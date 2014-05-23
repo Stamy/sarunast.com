@@ -6,7 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
+title:            Poole-test
 tagline:          The Jekyll Butler
 url:              http://getpoole.com
 paginate:         1
