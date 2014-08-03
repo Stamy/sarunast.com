@@ -13,7 +13,7 @@ url:              http://lanyon.getpoole.com
 paginate:         5
 
 author:
-  name:           'Mark Otto'
+  name:           'Sarunas Tamasauskas'
   url:            https://twitter.com/mdo
 
 # Custom vars
@@ -21,3 +21,5 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/poole/lanyon
+
+exclude: [node_modules, gulpfile.js, package.json]
