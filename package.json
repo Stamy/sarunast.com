@@ -1,0 +1,19 @@
+{
+  "name": "Sarunas",
+  "version": "0.0.0",
+  "description": "Sarunas website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.7"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^2.1.0",
+    "gulp-watch": "^0.6.9",
+    "tiny-lr": "0.0.9"
+  },
+  "author": "Sarunas",
+  "bugs": {
+    "url": "https://github.com/Stamy/sarunast.com/issues"
+  },
+  "homepage": "http:/sarunast.com"
+}
