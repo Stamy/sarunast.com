@@ -12,7 +12,7 @@ var server = lr();
 // then run livereload after files were changed
 gulp.task('server', function(){
   var spawn = require('child_process').spawn,
-    j = spawn('bundle', ['exec', 'jekyll', 'build', '-w']);
+    j = spawn('bundle', ['exec', 'jekyll', 'build', '--watch']);
 
   j.stdout.on('data', function (data) {
     console.log('stdout: ' + data); // works fine
@@ -34,7 +34,7 @@ gulp.task('server2', function(){
     livereload: true
   });
   console.log('Server running at http://localhost:9000/');
-  gulp.watch('_posts/*', function(event){
+  gulp.watch('_posts/*', function(event){ // TODO need to update the path
     console.log(event.path + ' ' + event.type + ', rebuilding...');
     gulp.src('')
       .pipe(run("bundle exec jekyll build").exec())
