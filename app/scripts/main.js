@@ -48,7 +48,7 @@ $(function () {
         swal('Success', 'Email was sent!', 'success');
       } else {
         swal('Oops...',
-            'Something went wrong! Not a problem you can still send reach my via my email ' + email,
+            'Something went wrong! Not a problem you can still reach my via my email ' + email,
           'error');
       }
     });
