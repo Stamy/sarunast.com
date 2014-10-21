@@ -1,10 +1,11 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-$fa-font-path:   "../bower_components/font-awesome/fonts";
+$icon-font-path: "../fonts";
+$fa-font-path:   "../fonts";
 
-$font-size-base:          18px;
+$font-size-base: 18px;
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome";
 // endbower
 
 .browsehappy {

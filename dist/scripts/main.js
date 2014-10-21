@@ -1,1 +1,0 @@
-"use strict";$(function(){$(".first").backstretch("../images/as3.jpg"),$("#fullpage").fullpage({easing:"swing",autoScrolling:!1,anchors:["home","about","contact"],css3:!0,paddingTop:"-50px",scrollingSpeed:500,menu:".navbar-nav",resize:!1})});

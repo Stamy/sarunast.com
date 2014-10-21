@@ -62,7 +62,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('extras', function () {
-    return gulp.src(['app/*.*', '!app/*.html'], { dot: true })
+    return gulp.src(['app/*.*', '!app/*.html', 'CNAME'], { dot: true })
         .pipe(gulp.dest('dist'));
 });
 
@@ -133,7 +133,8 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('pages', function(){
+gulp.task('pages', ['build'],function(){
+
   return gulp.src('./dist/**/*')
     .pipe($.ghPages());
 });
