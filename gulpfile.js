@@ -43,22 +43,19 @@ gulp.task('html', ['styles', 'scripts'], function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('app/images/**/*')
-        .pipe($.cache($.imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true
-        })))
-        .pipe(gulp.dest('dist/images'))
-        .pipe($.size());
+  return gulp.src('app/images/**/*')
+    .pipe($.cache($.imagemin({
+      progressive: true,
+      interlaced: true
+    })))
+    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('fonts', function () {
-    return $.bowerFiles()
-        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
-        .pipe($.flatten())
-        .pipe(gulp.dest('dist/fonts'))
-        .pipe($.size());
+  return gulp.src(require('main-bower-files')().concat('app/fonts/**/*'))
+    .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+    .pipe($.flatten())
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('extras', function () {
