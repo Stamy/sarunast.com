@@ -131,7 +131,6 @@ gulp.task('watch', ['connect', 'serve'], function () {
 });
 
 gulp.task('deploy', ['build'], function () {
-  return gulp.src('dist')
-    .pipe($.subtree())
-    .pipe($.clean());
+  return gulp.src('./dist/**/*')
+    .pipe($.ghPages());
 });
