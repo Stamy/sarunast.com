@@ -3,7 +3,6 @@
 
 $(function () {
 
-
   $('.first').backstretch('../images/as3.jpg');
 
   $('#fullpage').fullpage({
