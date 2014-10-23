@@ -13,7 +13,13 @@ $(function () {
     //paddingTop: '-50px',
     scrollingSpeed: 500,
     menu: '.navbar-nav',
-    resize: false
+    resize: false,
+    afterSlideLoad: function (anchorLink) {
+      console.log(anchorLink);
+      if(anchorLink === 'about'){
+        alert('echo');
+      }
+    }
   });
 
   $('#mail').on('submit', function (event) {
@@ -47,7 +53,7 @@ $(function () {
         swal('Success', 'Email was sent!', 'success');
       } else {
         swal('Oops...',
-            'Something went wrong! Not a problem you can still reach my via my email ' + email,
+          'Something went wrong! Not a problem you can still reach my via my email ' + email,
           'error');
       }
     });

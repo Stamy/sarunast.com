@@ -6,17 +6,27 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <meta name="google-site-verification" content="3Nvw8fij_UF3ycHmSerGQPD0HIjl0C9nCm5JaOm9dOQ" />
+  <meta name="google-site-verification" content="3Nvw8fij_UF3ycHmSerGQPD0HIjl0C9nCm5JaOm9dOQ"/>
 
   <!-- build:css styles/vendor.css -->
-  <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" />
+  <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css"/>
   <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
-  <link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css"/>
   <!-- endbuild -->
+
+  <style>
+    /*.navbar a {*/
+     /*color: #ffffff;*/
+    /*}*/
+
+    /*.navbar a:hover {*/
+     /*color: #c6c6c6;*/
+    /*}*/
+  </style>
 
 </head>
 <body>
@@ -25,97 +35,110 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-  <div class="header">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Sarunas T.</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-            <li data-menuanchor="about"><a href="#about">About</a></li>
-            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-  </div>
-
-  <div id="fullpage">
-    <div class="section first">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-6">
-            <h1 style="color: white"><small>I am</small> Sarunas Tamasauskas <small> a Web developer</small></h1>
-          </div>
-        </div>
+<div class="header">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Sarunas T</a>
       </div>
-    </div>
 
-    <div class="section" style="background-color: aliceblue">
-      <div class="container">
-        <div class="col-lg-12">
-
-          <h1>About Sarunas Tamasauskas</h1>
-          <br>
-          <p>
-            To begin with I believe I am a curious guy and appears that the web is one of the things which always
-            fascinated me. From the day I got access to the internet I always questioned myself how does it work. The
-            idea that you could connect and reach people through the website and send a message to all of them just used
-            to amaze me. Hence I began to build simple websites when I was 15 years old. It instantly caught my interest
-            and I kept on creating and learning something new with each website I built. After school I decided to
-            embrace it and went to the UK to study Web Development & Design. I graduated Loughborough university and
-            have been working for more than over a year at Veneficus as web developer and what is most interesting web
-            development is still fascinating to me the same way as I started learning it when I was a kid.
-          </p>
-
-          <h4>Technologies I am currently interested and learning</h4>
-          <p>NodeJs, MongoDB, Javascript, AngularJs</p>
-
-          <h4>What do I do at the moment ?</h4>
-          <p>Currently I am living in UK and work on few projects, also looking actively for new work opportunities.</p>
-
-          <p><em>If you want to know more about me you can go to my dedicated <a href="/CV.html">CV page</a>.</em></p>
-        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+          <li data-menuanchor="about"><a href="#about">About</a></li>
+          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+      <!-- /.navbar-collapse -->
     </div>
-    <div class="section">
+    <!-- /.container-fluid -->
+  </nav>
+</div>
 
-      <div class="container">
-        <h1>Keep in touch with me</h1>
-        <p>Feel free to drop me a message if you have any questions. I usually reply within a day.</p>
-        <br>
-        <br>
-        <form id="mail" role="form">
-          <div class="form-group input-group">
-            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-            <input type="name" name="name" class="form-control"  placeholder="Name" required>
-            </div>
-          <div class="form-group input-group">
-            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-            <input type="email" name="_replyto" class="form-control" placeholder="Email address" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Your message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-success">Send message</button>
-        </form>
+<div id="fullpage">
+
+  <div class="section first">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <h1 style="color: white">
+            <small>I am</small>
+            Sarunas Tamasauskass
+            <small> a Web developer</small>
+          </h1>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="footer container">
-    <p>Sarunas Tamasauskas ♥ Github pages
+  <div class="section" style="background-color: aliceblue">
+    <div class="container">
+      <div class="col-lg-12">
+
+        <h1>About Sarunas Tamasauskas</h1>
+        <br>
+
+        <p>
+          To begin with I believe I am a curious guy and appears that the web is one of the things which always
+          fascinated me. From the day I got access to the internet I always questioned myself how does it work. The
+          idea that you could connect and reach people through the website and send a message to all of them just used
+          to amaze me. Hence I began to build simple websites when I was 15 years old. It instantly caught my interest
+          and I kept on creating and learning something new with each website I built. After school I decided to
+          embrace it and went to the UK to study Web Development & Design. I graduated Loughborough university and
+          have been working for more than over a year at Veneficus as web developer and what is most interesting web
+          development is still fascinating to me the same way as I started learning it when I was a kid.
+        </p>
+
+        <h4>Technologies I am currently interested and learning</h4>
+
+        <p>NodeJs, MongoDB, Javascript, AngularJs</p>
+
+        <h4>What do I do at the moment ?</h4>
+
+        <p>Currently I am living in UK and work on few projects, also looking actively for new work opportunities.</p>
+
+        <p><em>If you want to know more about me you can go to my dedicated <a href="/CV.html">CV page</a>.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h1>Keep in touch with me</h1>
+
+      <p>Feel free to drop me a message if you have any questions. I usually reply within a day.</p>
+      <br>
+      <br>
+
+      <form id="mail" role="form">
+        <div class="form-group input-group">
+          <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+          <input type="name" name="name" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+          <input type="email" name="_replyto" class="form-control" placeholder="Email address" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Send message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="footer container">
+  <p>Sarunas Tamasauskas ♥ Github pages
 
       <span class="pull-right">
         You can also find me on:
@@ -130,15 +153,22 @@
         </a>
       </span>
 
-    </p>
-  </div>
+  </p>
+</div>
 
 <!-- Google Analytics -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-55904122-1', 'auto');
   ga('send', 'pageview');
