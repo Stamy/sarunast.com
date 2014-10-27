@@ -44,10 +44,10 @@ gulp.task('html', ['styles', 'scripts'], function () {
 
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin({
+    .pipe($.imagemin({
       progressive: true,
       interlaced: true
-    })))
+    }))
     .pipe(gulp.dest('dist/images'));
 });
 
@@ -63,7 +63,9 @@ gulp.task('extras', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
+gulp.task('clean', function () {
+    return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
+});
 
 gulp.task('build', ['html', 'images', 'fonts', 'extras']);
 
