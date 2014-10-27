@@ -4,12 +4,22 @@ $font-size-base: 18px;
 
 // Basics of a navbar
 $navbar-height: 55px;
-$navbar-default-bg: rgba(255, 255, 255, 0.9);
+$navbar-default-bg: rgba(255, 255, 255, 0.8);
 $navbar-default-link-active-bg: rgba(0, 0, 0, 0.1);
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// Homepage h1 styling
+.home h1 {
+  font-size: 2.8vw;
+  position: relative;
+  font-weight: 300;
+  color: #ebf5f0;
+  right: 64px;
+  bottom: 20px;
+}
 
 // Navbar font tweaks
 .navbar-brand {

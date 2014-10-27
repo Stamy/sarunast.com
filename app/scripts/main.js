@@ -3,7 +3,7 @@
 
 $(function () {
 
-  $('.first').backstretch('../images/as3.jpg');
+  $('.home').backstretch('../images/bg.jpg');
 
   $('#fullpage').fullpage({
     easing: 'swing',
