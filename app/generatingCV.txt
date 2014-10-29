@@ -1,1 +1,0 @@
-wkhtmltopdf --viewport-size 1900 -T 20 --footer-right 'sarunas.tamasauskas@gmail.com' --footer-left 'http://sarunast.com' http://localhost:9000/CV.html sarunas.pdf
