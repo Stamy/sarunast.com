@@ -2,11 +2,10 @@
   "name": "sarunast-com",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.2.0",
-    "modernizr": "~2.6.2",
+    "bootstrap-sass-official": "~3.3.0",
     "jquery": "~1.11.0",
     "font-awesome": "~4.2.0",
-    "fullpage.js": "~2.2.1",
+    "fullpage.js": "~2.4.1",
     "jquery-backstretch": "~2.0.4",
     "sweetalert": "~0.2.1"
   },
