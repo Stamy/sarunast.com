@@ -13,13 +13,7 @@ $(function () {
     //paddingTop: '-50px',
     scrollingSpeed: 500,
     menu: '.navbar-nav',
-    resize: false,
-    afterSlideLoad: function (anchorLink) {
-      console.log(anchorLink);
-      if(anchorLink === 'about'){
-        alert('echo');
-      }
-    }
+    resize: false
   });
 
   $('#mail').on('submit', function (event) {
