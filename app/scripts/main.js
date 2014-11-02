@@ -9,7 +9,6 @@ $(function () {
     easing: 'swing',
     autoScrolling: false,
     anchors: ['home', 'about', 'contact'],
-    css3: true,
     //paddingTop: '-50px',
     scrollingSpeed: 500,
     menu: '.navbar-nav',
