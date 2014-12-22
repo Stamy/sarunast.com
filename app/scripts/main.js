@@ -37,7 +37,7 @@ $(function () {
     });
 
     $.ajax({
-      url: '//forms.brace.io/' + email,
+      url: '//formspree.io/' + email,
       method: 'POST',
       data: form,
       dataType: 'json'
