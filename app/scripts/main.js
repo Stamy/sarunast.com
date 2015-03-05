@@ -42,7 +42,7 @@ $(function () {
       data: form,
       dataType: 'json'
     }).always(function (data) {
-      if (data.success !== 'undefined' && data.success === 'Email sent') {
+      if (data.success !== 'undefined' && data.success === 'email sent') {
         swal('Success', 'Email was sent!', 'success');
       } else {
         swal('Oops...',
