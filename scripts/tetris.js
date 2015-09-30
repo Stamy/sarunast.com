@@ -1,1 +1,0 @@
-function solution(e){for(var t=e.split(""),p=[],r=0;r<t.length;r++)if(isNaN(parseInt(t[r])))switch(t[r]){case"*":if(p.length<2)return-1;p.push(p.pop()*p.pop());break;case"+":if(p.length<2)return-1;p.push(p.pop()+p.pop());break;default:return-1}else p.push(parseInt(t[r]));return p.pop()}var text="17+*";console.log(solution(text));
