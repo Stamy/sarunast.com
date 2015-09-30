@@ -5,9 +5,10 @@
     "bootstrap-sass-official": "~3.3.0",
     "jquery": "~1.11.0",
     "font-awesome": "~4.2.0",
-    "fullpage.js": "~2.4.1",
+    "fullpage.js": "~2.7.0",
     "jquery-backstretch": "~2.0.4",
-    "sweetalert": "~0.2.1"
+    "sweetalert": "~0.4.0",
+    "headroom.js": "~0.7.0"
   },
   "devDependencies": {}
 }
