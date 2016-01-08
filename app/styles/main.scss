@@ -1,4 +1,4 @@
-$icon-font-path: "../fonts";
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts" !default; // for referencing Bootstrap CDN font files directly
 
 $font-size-base: 18px;
 
@@ -9,22 +9,10 @@ $navbar-default-link-active-bg: rgba(0, 0, 0, 0.1);
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
 @import "../bower_components/fullpage.js/jquery.fullPage.scss";
+@import "../bower_components/sweetalert/lib/sweet-alert.scss";
 // endbower
-
-/**
- * Note: I have omitted any vendor-prefixes for clarity.
- * Adding them is left as an exercise for the reader.
- */
-.headroom {
-  transition: transform 200ms linear;
-}
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
-}
 
 // General styling
 body {
