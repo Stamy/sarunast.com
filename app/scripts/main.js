@@ -2,17 +2,6 @@
 /*global swal */
 
 (function () {
-
-  //$('.navbar').headroom({
-  //  offset: 0,
-  //  tolerance: 5,
-  //  onUnpin : function (wut) {
-  //    console.log(wut);
-  //    console.log(this);
-  //    return true;
-  //  }
-  //});
-
   $('.home').backstretch('../images/bg.jpg');
 
   $('#fullpage').fullpage({
@@ -22,7 +11,8 @@
     //paddingTop: '-50px',
     scrollingSpeed: 500,
     menu: '.navbar-nav',
-    resize: false
+    resize: false,
+    fitToSection: false
   });
 
   $('#mail').on('submit', function (event) {
