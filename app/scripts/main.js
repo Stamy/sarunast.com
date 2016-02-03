@@ -2,7 +2,7 @@
 /*global swal */
 
 (function () {
-  $('.home').backstretch('../images/bg.jpg');
+  $('.home').backstretch('images/bg.jpg');
 
   $('#fullpage').fullpage({
     easing: 'swing',
